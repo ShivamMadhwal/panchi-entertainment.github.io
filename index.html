@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panchi Events | Premium Event Management</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="logo">Panchi <span>Entertainment pvt ltd.</span></div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#booking">Book Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h1>Crafting Unforgettable Experiences</h1>
+    <p>From weddings to corporate galas, we bring your dream events to life with style and precision.</p>
+    <button class="btn" id="heroBtn">Book an Event</button>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <div class="section-title">
+      <h2>Our Past Events</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-full="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=500&q=80" alt="Wedding Setup">
+      </div>
+      <div class="gallery-item" data-full="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80">
+        <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=500&q=80" alt="Corporate Seminar">
+      </div>
+      <div class="gallery-item" data-full="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80">
+        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=500&q=80" alt="Birthday Party">
+      </div>
+      <div class="gallery-item" data-full="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80">
+        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=500&q=80" alt="Concert Stage">
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="modal">
+    <span class="close-modal" id="closeModal">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged Event Image">
+  </div>
+
+  <!-- Booking & Contact Section -->
+  <section id="booking">
+    <div class="section-title">
+      <h2>Book Your Event</h2>
+    </div>
+    <div class="form-container">
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" required placeholder="john@example.com">
+        </div>
+        <div class="form-group">
+          <label for="eventType">Event Type</label>
+          <select id="eventType" required>
+            <option value="" disabled selected>Select an event type</option>
+            <option value="wedding">Wedding</option>
+            <option value="corporate">Corporate Event</option>
+            <option value="birthday">Birthday Party</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Event Date</label>
+          <input type="date" id="date" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Additional Details</label>
+          <textarea id="message" placeholder="Tell us about your estimated guest count or special requests..."></textarea>
+        </div>
+        <button type="submit" class="btn full-width">Submit Inquiry</button>
+      </form>
+      <div id="successMessage" class="success-message">
+        Thank you! Your inquiry has been submitted. We'll contact you shortly.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Panchi Events Management. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
